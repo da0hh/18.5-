@@ -4,14 +4,11 @@
 
 using namespace std;
 
-void swapvec(vector<int> vec, int *mass) {
-    int temp[4];
-    for (int i = 0; i < vec.size(); i++)
-        mass[i] = temp[i];
-    for (int i = 0; i < vec.size(); i++)
-        mass[i] = vec[i];
-    for (int i = 0; i < vec.size(); i++)
-        temp[i] = vec[i];
+void swapvec(std::vector<int>& vec, int* pt)
+{
+    for (int i = 0; i < vec.size(); ++i)
+
+        std::swap(vec[i], pt[i]);
 }
 
 int main() {
