@@ -28,6 +28,4 @@ int main() {
 
     int result = countWays(n, k);
     std::cout << "Количество способов: " << result << std::endl;
-
-    return 0;
 }
